@@ -1,19 +1,18 @@
 {
-  "name": "parallax-efect",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "facenote",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/realDiegoR/parallax-efect.git"
+  "devDependencies": {
+    "gh-pages": "^5.0.0",
+    "vite": "^4.0.0"
   },
-  "author": "realdiegor",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/realDiegoR/parallax-efect/issues"
-  },
-  "homepage": "https://github.com/realDiegoR/parallax-efect#readme"
+  "dependencies": {
+    "unique-names-generator": "^4.7.1"
+  }
 }
