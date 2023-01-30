@@ -55,9 +55,6 @@ photos.forEach((photo) => {
 
 const totalColumns = Math.floor(main.offsetWidth / 100);
 const totalAssets = Math.floor(main.scrollHeight / 480);
-// console.log(
-// 	`columns: ${totalColumns}, rows: ${totalAssets}, width: ${main.offsetWidth}, height: ${main.scrollHeight}`
-// );
 
 function getPrintingPoints(axisLength, assetsAvailable) {
 	const printingPoints = [];
@@ -78,7 +75,7 @@ getPrintingPoints(main.scrollHeight, totalAssets).forEach((printingPoint) => {
 	const scale = (10 - translateZ) / 10;
 	rowsPrintingPoints.push("0");
 
-	img.src = `./../assets/${asset}.svg`;
+	img.src = `./assets/${asset}.svg`;
 	img.alt = asset;
 	img.width = 200;
 	img.height = 200;
