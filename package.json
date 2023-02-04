@@ -1,18 +1,19 @@
 {
-  "name": "facenote",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
-  },
-  "devDependencies": {
-    "gh-pages": "^5.0.0",
-    "vite": "^4.0.0"
-  },
-  "dependencies": {
-    "unique-names-generator": "^4.7.1"
-  }
+	"name": "facenote",
+	"private": true,
+	"version": "0.0.0",
+	"type": "module",
+	"scripts": {
+		"dev": "vite",
+		"build": "vite build",
+		"preview": "vite preview",
+		"deploy": "gh-pages -d dist"
+	},
+	"devDependencies": {
+		"gh-pages": "^5.0.0",
+		"vite": "^4.0.0"
+	},
+	"dependencies": {
+		"unique-names-generator": "^4.7.1"
+	}
 }

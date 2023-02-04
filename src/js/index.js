@@ -1,5 +1,5 @@
-import { photos, names, main, header, hamburger } from "./domNodes";
-import { PEOPLE, ASSETS } from "./dictionaries";
+import { photos, names, main, header, hamburger, text } from "./domNodes";
+import { PEOPLE, ASSETS, BIOGRAPHIES } from "./dictionaries";
 import {
 	totalColumns,
 	totalAssets,
@@ -20,6 +20,10 @@ hamburger.addEventListener(
 
 names.forEach((name) => {
 	name.textContent = `${getRandomName()} ${getRandomName()}`;
+});
+
+text.forEach((text) => {
+	text.textContent = `${BIOGRAPHIES[randomBetween(0, BIOGRAPHIES.length - 1)]}`;
 });
 
 photos.forEach((photo) => {

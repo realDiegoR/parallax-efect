@@ -164,6 +164,7 @@ body {
 	background-color: darkblue;
 	transform: scaleX(0);
 	transition: transform 300ms;
+	transform-origin: right;
 }
 
 .header__link:hover {
@@ -172,6 +173,7 @@ body {
 
 .header__link:hover::after {
 	transform: scaleX(1);
+	transform-origin: left;
 }
 
 .header__ctas {
